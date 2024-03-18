@@ -16,6 +16,7 @@ export default () => {
     name: user.name,
     role: user.role,
     address: user.address,
+    avatar: user.avatar,
   });
   const dispatch = useDispatch();
   if (!user) return <Loader />;
@@ -57,6 +58,17 @@ export default () => {
               <div className="w-full md:w-[48.5%]">
                 <div>Address</div>
                 <textarea className="projectsInput h-auto py-2" name="address" value={values.address} onChange={(e) => setValues({ ...values, address: e.target.value })} />
+              </div>
+              {/* Added feature: profile picture */}
+              <div className="w-full md:w-[48.5%]">
+                <div>Profile Picture</div>
+                <input
+                  className="projectsInput"
+                  placeholder="Paste your image URL"
+                  name="avatar"
+                  value={values.avatar}
+                  onChange={(e) => setValues({ ...values, avatar: e.target.value })}
+                />
               </div>
             </div>
             <hr className="my-4" />
