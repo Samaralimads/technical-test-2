@@ -37,7 +37,19 @@ Time to be creative, and efficient. Do what you think would be the best for your
 ## Finally
 
 Send us the project and answer to those simple questions : 
-- What bugs did you find ? How did you solve these and why ? 
-- Which feature did you develop and why ? 
-- Do you have any feedback about the code / architecture of the project and what was the difficulty you encountered while doing it ? 
+- What bugs did you find ? How did you solve these and why ?
+#### Bugs:
+password visible
+can't change user's name 
+"Update" button not working
+when clicked: project not displayed
+
+
+- Which feature did you develop and why ?
+#### Feature: User Profile Picture
+
+Profile pictures help users to recognize each other more easily, especially in social or community-driven platforms.
+
+- Do you have any feedback about the code / architecture of the project and what was the difficulty you encountered while doing it ?
+It was very nice to see how the project was organized (edit, index, list, view, etc..) it was a bit different to what i did at school, so it took me a minute do get the logic but after it was way easier to find what i was looking for when trying to fix a bug.
 
