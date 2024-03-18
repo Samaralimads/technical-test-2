@@ -19,7 +19,8 @@ router.get("/list", passport.authenticate("user", { session: false }), async (re
 
 router.get("/:id", passport.authenticate("user", { session: false }), async (req, res) => {
   try {
-    const data = await ProjectObject.find({ _id: req.params.id });
+    // modified .find() to .findOne cause I only want 1 project, not an array.
+    const data = await ProjectObject.findOne({ _id: req.params.id });
     return res.status(200).send({ ok: true, data });
   } catch (error) {
     console.log(error);
